@@ -1,0 +1,64 @@
+.list-container
+{
+    width: 100%;
+    overflow: auto;
+    margin-top: 13px;
+}
+.list-container > div:first-child
+{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+.item-list
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+.item-row
+{
+    display: block !important;
+    margin: 4px 0px 3px 0px;
+    vertical-align: middle;    
+}
+.alternating-row
+{
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #CBCBCB;
+    border-top: 1px solid #CBCBCB;    
+}
+.item-row .item-link
+{
+    color: blue;
+    display: inline-block;
+    vertical-align: middle;
+    width: 365px;
+    word-wrap: break-word;
+}
+.item-row.alternating-row .item-link
+{
+    color: darkgreen;
+}
+.item-row .right-item-buttons
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.item-row .right-item-buttons .cross-button
+{
+    background-position: center center;
+    background-image: url('images/remove.png');
+    background-repeat: no-repeat;
+    color: Blue;
+    cursor: pointer;
+    font-size: large;
+    height: 16px;    
+    padding-left: 5px;
+    width: 16px;
+}
+.item-row .right-item-buttons a
+{
+    padding-left: 10px;
+    text-decoration: none;
+    padding-right: 4px;
+}

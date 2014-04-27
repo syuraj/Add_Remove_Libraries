@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>Add Remove Library</title>
+    <link href="style.css" type="text/css" rel="Stylesheet" />
+    <style type="text/css">
+        #mainPopup
+        {
+            padding: 8px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainPopup">
+        <div id="insert-javascript-block">
+            <input id="javascript-url" type="text" placeholder="JavaScript URL" style="width: 80%"
+                autofocus />
+            <input id="btnInjectJavaScript" type="button" value="Inject" style="font-size: 1.05em" />
+        </div>
+        <div id="insert-css-block">
+            <input id="css-url" type="text" placeholder="CSS URL" style="width: 80%" autofocus />
+            <input id="btnInjectCss" type="button" value="Inject" style="font-size: 1.05em" />
+        </div>
+        <div class="list-container">
+            <div>
+                Loaded JavaScript Libraries</div>
+            <table class="item-list" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div id="javascript-item-rows">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list-container">
+            <div>
+                Loaded CSS Libraries</div>
+            <table class="item-list" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div id="css-item-rows">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
+    <script type="text/javascript" src="../js/jquery-2.1.0.min.js"></script>
+</body>
+</html>
